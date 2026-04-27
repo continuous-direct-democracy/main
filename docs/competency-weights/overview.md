@@ -59,13 +59,34 @@ Populist decisions that contradict scientific consensus have less chance of bein
 
 The system creates a natural motivation for citizens to obtain education and develop competencies, as this increases their influence when voting.
 
+## Expert Recommendations
+
+In addition to weighted voting, experts can publish **public recommendations** on issues within their competency. This provides an information layer that helps all citizens make informed decisions without replacing their vote.
+
+### How Recommendations Work
+
+1. **Publishing a recommendation:** an expert can publish their position (For / Against / Abstain) with a brief rationale, cryptographically signed
+2. **Aggregation:** recommendations are aggregated by competency group — e.g., «Geneticists: 87% of 500 recommend AGAINST. Average reputation of respondents: 0.82»
+3. **Display:** recommendations are shown alongside the voting question, visible to citizens before they cast their vote
+4. **Optional:** experts are not required to publish a recommendation. Absence of a signal is itself informative — the expert community may lack consensus or the question may lie outside their field
+
+### Purpose
+
+- Experts **inform**, not rule — each citizen's vote retains its base weight
+- Recommendations provide a reference point, especially for complex specialized issues
+- Transparency: every expert's position and rationale is publicly auditable
+
 ## Defining Competencies
 
 Who determines which competencies are needed for voting on a specific issue?
 
-1. **The issue initiator** proposes a set of competencies and their distribution when submitting the issue for a vote
-2. **An expert council** (elected body) reviews and adjusts the proposed distribution
-3. **Citizens** can challenge the competency distribution through a separate vote
+The competency distribution is determined **automatically** through a crowdsourced mechanism:
+
+1. **Relevance claims:** when an issue is opened for voting, registered professionals can claim that the issue falls within their competency area
+2. **Automatic calculation:** the competency distribution is computed proportionally to the number of experts who claimed relevance in each area
+   - Example: if 40 geneticists and 60 ecologists claim relevance, the distribution is 40% genetics, 60% ecology
+3. **Spam protection:** experts who claim relevance to clearly unrelated issues lose reputation. The community can challenge relevance claims through voting
+4. **Fallback:** if no expert claims relevance to an issue, the weight system does not apply — all votes carry equal weight
 
 Read more about how professional status is determined in the [Competency Assignment](./assignment.md) section.
 

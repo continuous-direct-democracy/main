@@ -49,35 +49,35 @@ Consider a vote on a **law banning GMOs**.
 The multiplier for a competency is determined through its share:
 
 ```
-Multiplier_genetics = Share_genetics × 100 = 0.70 × 100 = 70
+Multiplier_genetics = Share_genetics × 10 = 0.70 × 10 = 7
 ```
 
-The coefficient 100 is the base amplification factor, which can be adjusted depending on the voting level.
+The coefficient 10 is the base amplification factor, which can be adjusted depending on the voting level.
 
 **Step 2: Calculating vote weights**
 
-| Cohort           | Count       | Vote Weight | Total Weight      |
-| ---------------- | ----------- | ----------- | ----------------- |
-| Regular citizens | 99,500      | 1           | 99,500            |
-| Geneticists      | 500         | 1 + 70 = 71 | 500 × 71 = 35,500 |
-| **Total**        | **100,000** |             | **135,000**       |
+| Cohort           | Count       | Vote Weight | Total Weight    |
+| ---------------- | ----------- | ----------- | --------------- |
+| Regular citizens | 99,500      | 1           | 99,500          |
+| Geneticists      | 500         | 1 + 7 = 8   | 500 × 8 = 4,000 |
+| **Total**        | **100,000** |             | **103,500**     |
 
 **Step 3: Analysis**
 
-- Weight contribution of 500 geneticists: `35,500 / 135,000 ≈ 26.3%` of the final result
-- Weight contribution of 99,500 others: `99,500 / 135,000 ≈ 73.7%` of the final result
+- Weight contribution of 500 geneticists: `4,000 / 103,500 ≈ 3.86%` of the final result
+- Weight contribution of 99,500 others: `99,500 / 103,500 ≈ 96.14%` of the final result
 
-Thus, **0.5% of participants** (geneticists) determine **26.3%** of the final result, reflecting their professional significance for the given issue.
+Thus, **0.5% of participants** (geneticists) contribute **3.86%** of the final result. Experts carry additional weight, but do not dominate the outcome: their influence is decisive only when the general vote is close.
 
 ## Example with Multiple Competencies
 
 Consider a citizen who has competencies in both genetics **and** ecology.
 
 ```
-Vote_weight = 1 + (0.70 × 100) + (0.15 × 100) = 1 + 70 + 15 = 86
+Vote_weight = 1 + (0.70 × 10) + (0.15 × 10) = 1 + 7 + 1.5 = 9.5
 ```
 
-Their vote weighs 86 — significantly more than a specialist in only one field.
+Their vote weighs 9.5 — more than a specialist in only one field.
 
 ## Threshold Values
 
@@ -94,8 +94,8 @@ Not every diploma holder automatically receives the full multiplier. The multipl
 
 **Example for a geneticist:**
 
-- Entry level: `1 + 70 × 0.25 = 18.5`
-- Expert level: `1 + 70 × 1.0 = 71`
+- Entry level: `1 + 7 × 0.25 = 2.75`
+- Expert level: `1 + 7 × 1.0 = 8`
 
 ### Maximum Weight
 
@@ -105,7 +105,7 @@ To prevent excessive influence by a single person, a **ceiling** on maximum vote
 Vote_weight = min(Calculated_weight, Max_weight)
 ```
 
-Recommended ceiling: **100** (a vote cannot weigh more than 100 times the base weight).
+Recommended ceiling: **10** (a vote cannot weigh more than 10 times the base weight).
 
 ## Edge Cases
 
