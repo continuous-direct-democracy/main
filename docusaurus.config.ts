@@ -130,6 +130,11 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Continuous Direct Democracy. Built with Docusaurus.`,
     },
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
