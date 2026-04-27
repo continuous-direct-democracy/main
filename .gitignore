@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+sources/
+
+# Build output
+build/
+.docusaurus/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Package manager lock files (keep package-lock.json)
+yarn.lock

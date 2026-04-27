@@ -1,0 +1,46 @@
+{
+  "homepage.hero.button": {
+    "message": "Читать документацию →",
+    "description": "The hero button text on the homepage"
+  },
+  "homepage.feature.continuous-voting.title": {
+    "message": "🗳️ Непрерывное голосование",
+    "description": "Title of the continuous voting feature card"
+  },
+  "homepage.feature.continuous-voting.description": {
+    "message": "Голосуйте в любой момент времени. Система накопительных очков обеспечивает инерционность и защиту от импульсивных решений.",
+    "description": "Description of the continuous voting feature card"
+  },
+  "homepage.feature.continuous-voting.link": {
+    "message": "Подробнее →",
+    "description": "Link text for continuous voting feature"
+  },
+  "homepage.feature.blockchain.title": {
+    "message": "🔗 Блокчейн и криптография",
+    "description": "Title of the blockchain feature card"
+  },
+  "homepage.feature.blockchain.description": {
+    "message": "GPG-ключи, открытая сеть голосования, полная верификация. Каждый гражданин может убедиться, что его голос учтён верно.",
+    "description": "Description of the blockchain feature card"
+  },
+  "homepage.feature.delegation.title": {
+    "message": "🤝 Делегирование голоса",
+    "description": "Title of the delegation feature card"
+  },
+  "homepage.feature.delegation.description": {
+    "message": "Передайте свой голос доверенному лицу, но сохраняйте право проголосовать лично в любой момент без предупреждения.",
+    "description": "Description of the delegation feature card"
+  },
+  "homepage.feature.weights.title": {
+    "message": "⚖️ Весовые коэффициенты",
+    "description": "Title of the competency weights feature card"
+  },
+  "homepage.feature.weights.description": {
+    "message": "Голоса профессионалов в соответствующих областях имеют больший вес. Компетенции определяются через peer-based систему.",
+    "description": "Description of the competency weights feature card"
+  },
+  "homepage.feature.link.readMore": {
+    "message": "Подробнее →",
+    "description": "Read more link text on feature cards"
+  }
+}

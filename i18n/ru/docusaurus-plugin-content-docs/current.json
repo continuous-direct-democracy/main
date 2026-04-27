@@ -1,0 +1,18 @@
+{
+  "sidebar.docsSidebar.category.Direct Voting": {
+    "message": "Прямое голосование",
+    "description": "The label for category Direct Voting in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Voting Process": {
+    "message": "Процесс голосования",
+    "description": "The label for category Voting Process in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Competency Weights": {
+    "message": "Система весов компетенций",
+    "description": "The label for category Competency Weights in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Governance & Transparency": {
+    "message": "Управление и прозрачность",
+    "description": "The label for category Governance & Transparency in sidebar docsSidebar"
+  }
+}
