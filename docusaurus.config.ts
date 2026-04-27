@@ -19,11 +19,11 @@ const config: Config = {
     },
   },
 
-  url: "https://your-github-username.github.io",
-  baseUrl: "/direct-democracy/",
+  url: "https://continuous-direct-democracy.github.io",
+  baseUrl: "/main/",
 
-  organizationName: "your-github-username",
-  projectName: "direct-democracy",
+  organizationName: "continuous-direct-democracy",
+  projectName: "main",
 
   trailingSlash: true,
   onBrokenLinks: "throw",
@@ -79,7 +79,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://github.com/your-github-username/direct-democracy",
+          href: "https://github.com/continuous-direct-democracy/main",
           label: "GitHub",
           position: "right",
         },
@@ -123,7 +123,7 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/your-github-username/direct-democracy",
+              href: "https://github.com/continuous-direct-democracy/main",
             },
           ],
         },
